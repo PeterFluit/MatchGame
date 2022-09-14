@@ -6,6 +6,10 @@ public class MatchBehavior : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(idObj);
+        var otherID = other.GetComponent<IDContainerBehavior>().idObj;
+        if (otherID == idObj)
+        {
+            Debug.Log("Matched");
+        }
     }
 }
