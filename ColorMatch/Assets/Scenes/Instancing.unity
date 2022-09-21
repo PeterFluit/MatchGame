@@ -280,11 +280,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: c12eda096a2dcbd45aa955afafe9f4bc, type: 2}
         m_TargetAssemblyTypeName: Instancer, Assembly-CSharp
-        m_MethodName: CreateInstance
-        m_Mode: 2
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 6612f697442d24b4c985aaffc32020bf, type: 2}
-          m_ObjectArgumentAssemblyTypeName: Vector3Data, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: Vector3DataList, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
