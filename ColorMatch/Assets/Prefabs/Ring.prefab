@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3466035858358684427}
   - component: {fileID: -3016443930405146779}
   - component: {fileID: -7362912887094539798}
+  - component: {fileID: -242283953358312760}
+  - component: {fileID: 2510108444988806826}
   m_Layer: 0
   m_Name: Ring
   m_TagString: Untagged
@@ -112,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96474217f644fe1448c517b4e0e9cb2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seconds: 1
+  seconds: 3
 --- !u!54 &-7362912887094539798
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -122,10 +124,56 @@ Rigidbody:
   m_GameObject: {fileID: 3821954471014839539}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 3
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-242283953358312760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3821954471014839539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03672fd899a0dcc45996a3ff053250d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2510108444988806826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3821954471014839539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c044fafffe466f54f9cafce063ab11d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  awakeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  startEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -242283953358312760}
+        m_TargetAssemblyTypeName: SpriteBehavior, Assembly-CSharp
+        m_MethodName: ChangeRendererColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 7f181cc6a2c922f4fb47b84bcbc3461d, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ColorID, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onEnableEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  holdTime: 0
