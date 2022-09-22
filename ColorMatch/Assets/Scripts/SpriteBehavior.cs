@@ -6,8 +6,7 @@ public class SpriteBehavior : MonoBehaviour
 {
     private SpriteRenderer rendererObj;
 
-    // Start is called before the first frame update
-    private void Start()
+    private void Awake()
     {
         rendererObj = GetComponent<SpriteRenderer>();
     }
@@ -15,5 +14,10 @@ public class SpriteBehavior : MonoBehaviour
     public void ChangeRendererColor(ColorID obj)
     {
         rendererObj.color = obj.value;
+    }
+
+    public void ChangeRendererColor(ColorIDDataList obj)
+    {
+        rendererObj.color = obj.currentColor.value;
     }
 }
