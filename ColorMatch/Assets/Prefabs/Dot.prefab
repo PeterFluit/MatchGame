@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -242283953358312760}
   - component: {fileID: 2510108444988806826}
   - component: {fileID: -5311930487017909086}
+  - component: {fileID: 4745446581192310033}
   m_Layer: 6
   m_Name: Dot
   m_TagString: Untagged
@@ -190,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655726cb709cc1f49a8cce1fa4a9bce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idObj: {fileID: 0}
+  idObj: {fileID: 11400000, guid: 94857bd88d2cc724bb3b8636b2b5e1c0, type: 2}
   matchEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -201,3 +202,25 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   ColorIDDataListObj: {fileID: 11400000, guid: bb8f98e620999a149846b8743615a479, type: 2}
+--- !u!114 &4745446581192310033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3821954471014839539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d84a07b829897d42b6feeed6335a438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idObj: {fileID: 0}
+  matchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  noMatchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  noMatchDelayedEvent:
+    m_PersistentCalls:
+      m_Calls: []
