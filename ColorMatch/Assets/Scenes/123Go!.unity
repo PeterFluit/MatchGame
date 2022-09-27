@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 68982383}
   - component: {fileID: 68982382}
   - component: {fileID: 68982384}
+  - component: {fileID: 68982385}
   m_Layer: 5
   m_Name: ScoreNum
   m_TagString: Untagged
@@ -272,6 +273,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 68982384}
+        m_TargetAssemblyTypeName: TextMeshProBehavior, Assembly-CSharp
+        m_MethodName: UpdateLabel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 43330d36964273f499957f72c0a7e637, type: 2}
+          m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &68982385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68982380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84221473ae0b1934bbb873de1c6928e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: fef2b484227552240ae828133aea97a5, type: 2}
+  onRaiseEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 68982384}
@@ -1390,6 +1419,7 @@ GameObject:
   - component: {fileID: 928221744}
   - component: {fileID: 928221743}
   - component: {fileID: 928221742}
+  - component: {fileID: 928221745}
   m_Layer: 5
   m_Name: HighScoreNum
   m_TagString: Untagged
@@ -1553,6 +1583,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 928221740}
   m_CullTransparentMesh: 1
+--- !u!114 &928221745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928221740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84221473ae0b1934bbb873de1c6928e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: fef2b484227552240ae828133aea97a5, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 928221742}
+        m_TargetAssemblyTypeName: TextMeshProBehavior, Assembly-CSharp
+        m_MethodName: UpdateLabel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: cd9fa549380cc0043b2c1086c0115408, type: 2}
+          m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &972822992
 GameObject:
   m_ObjectHideFlags: 0
