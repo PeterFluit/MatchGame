@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="44eead3f-b7b1-4a83-979a-b32c92db62a6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Space Hockey/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Space Hockey/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FollowPuck.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FollowPuck.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
@@ -82,6 +81,7 @@
       <workItem from="1666754810822" duration="268000" />
       <workItem from="1666799072718" duration="42000" />
       <workItem from="1666805436094" duration="4092000" />
+      <workItem from="1666835873865" duration="1841000" />
     </task>
     <servers />
   </component>

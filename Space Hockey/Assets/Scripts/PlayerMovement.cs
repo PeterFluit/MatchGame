@@ -8,9 +8,30 @@ public class PlayerMovement : MonoBehaviour
     bool canMove;
     Vector2 playerSize;
 
+    public Transform BoundaryHolder;
+    private Boundary playerBoundary;
+    struct Boundary
+    {
+        public float Up, Down, Left, Right;
+
+        public Boundary(float up, float down, float left, float right)
+        {
+            Up = up;
+            Down = down;
+            Left = left;
+            Right = right;
+        }
+    }
+
     void Start()
     {
         playerSize = gameObject.GetComponent<SpriteRenderer>().bounds.extents;
+
+        playerBoundary = new Boundary(BoundaryHolder.GetChild(0).position.y,
+            BoundaryHolder.GetChild(1).position.y,
+            BoundaryHolder.GetChild(2).position.x,
+            BoundaryHolder.GetChild(3).position.x);
+
     }
 
 
@@ -42,7 +63,11 @@ public class PlayerMovement : MonoBehaviour
 
             if (canMove)
             {
-                transform.position = mousePos;
+                Vector2 clampedMousePos = new Vector2(
+                    Mathf.Clamp(mousePos.x, playerBoundary.Left, playerBoundary.Right),
+                    Mathf.Clamp(mousePos.y, playerBoundary.Down, playerBoundary.Up));
+                
+                transform.position = clampedMousePos;
             }
             else
             {
