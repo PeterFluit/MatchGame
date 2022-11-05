@@ -13,8 +13,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IntData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TextMeshProBehaviour1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Types/Boundary.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -82,6 +84,8 @@
       <workItem from="1666799072718" duration="42000" />
       <workItem from="1666805436094" duration="4092000" />
       <workItem from="1666835873865" duration="1841000" />
+      <workItem from="1666978290124" duration="1541000" />
+      <workItem from="1667075624567" duration="1744000" />
     </task>
     <servers />
   </component>
