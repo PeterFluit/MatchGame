@@ -36,23 +36,26 @@ public class AIScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float movementSpeed;
+        if (!PuckScript.WasGoal)
+        {
+            float movementSpeed;
 
-        if (Puck.position.y < puckBoundary.Down)
-        {
-            movementSpeed = MaxMovementSpeed * Random.Range(0.1f, 0.3f);
-            targetPosition = new Vector2(Mathf.Clamp(Puck.position.x, playerBoundary.Left, playerBoundary.Right),
-                startingPosition.y);
+            if (Puck.position.y < puckBoundary.Down)
+            {
+                movementSpeed = MaxMovementSpeed * Random.Range(0.1f, 0.3f);
+                targetPosition = new Vector2(Mathf.Clamp(Puck.position.x, playerBoundary.Left, playerBoundary.Right),
+                    startingPosition.y);
+            }
+            else
+            {
+                movementSpeed = Random.Range(MaxMovementSpeed * 0.4f, MaxMovementSpeed);
+                targetPosition = new Vector2(Mathf.Clamp(Puck.position.x, playerBoundary.Left, playerBoundary.Right),
+                    Mathf.Clamp(Puck.position.y, playerBoundary.Down, playerBoundary.Up));
+
+
+            }
+
+            rb.MovePosition(Vector2.MoveTowards(rb.position, targetPosition, movementSpeed * Time.fixedDeltaTime));
         }
-        else
-        {
-            movementSpeed = Random.Range(MaxMovementSpeed * 0.4f, MaxMovementSpeed);
-            targetPosition = new Vector2(Mathf.Clamp(Puck.position.x, playerBoundary.Left, playerBoundary.Right),
-                Mathf.Clamp(Puck.position.y, playerBoundary.Down, playerBoundary.Up));
-            
-           
-        } 
-        
-        rb.MovePosition(Vector2.MoveTowards(rb.position, targetPosition, movementSpeed * Time.fixedDeltaTime));
     }
 }

@@ -4,7 +4,8 @@
     <list default="true" id="44eead3f-b7b1-4a83-979a-b32c92db62a6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Space Hockey/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Space Hockey/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AIScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AIScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +16,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IntData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PuckScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TextMeshProBehaviour1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Types/Boundary.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -86,6 +88,9 @@
       <workItem from="1666835873865" duration="1841000" />
       <workItem from="1666978290124" duration="1541000" />
       <workItem from="1667075624567" duration="1744000" />
+      <workItem from="1667681353269" duration="1313000" />
+      <workItem from="1667695543525" duration="275000" />
+      <workItem from="1667698942336" duration="533000" />
     </task>
     <servers />
   </component>
