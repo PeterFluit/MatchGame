@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class PuckScript : MonoBehaviour
 {
-    public Score ScoreScriptInstance;
+    ScoreScript ScoreScriptInstance;
     public static bool WasGoal { get; private set; }
-    private Rigidbody rb;
+    private Rigidbody2D rb;
 
     void Start()
     {
@@ -21,13 +21,13 @@ public class PuckScript : MonoBehaviour
         {
             if (other.tag == "AiGoal")
             {
-                ScoreScriptInstance.Increment(Score.Score.PlayerScore);
+                ScoreScriptInstance.Increment(ScoreScript.Score.PlayerScore);
                 WasGoal = true;
                 StartCoroutine(ResetPuck());
             }
             else if (other.tag == "PlayerGoal")
             {
-                ScoreScriptInstance.Increment(ScoreScriptInstance.Score.AiScore);
+                ScoreScriptInstance.Increment(ScoreScript.Score.AiScore);
                 StartCoroutine(ResetPuck());
             }
         }
@@ -37,6 +37,8 @@ public class PuckScript : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(1);
         WasGoal = false;
-        rb.velocity = rb.position = new Vector2(0,0)
+        rb.velocity = rb.position = new Vector2(0, 0);
     }
 }
+
+//Also make sure you CITE VIDEOS!!!!!!!!!

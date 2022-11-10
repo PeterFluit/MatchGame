@@ -4,8 +4,9 @@
     <list default="true" id="44eead3f-b7b1-4a83-979a-b32c92db62a6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Space Hockey/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Space Hockey/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AIScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AIScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PuckScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PuckScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Score.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Score.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +18,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IntData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PuckScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScoreScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TextMeshProBehaviour1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Types/Boundary.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -91,6 +93,10 @@
       <workItem from="1667681353269" duration="1313000" />
       <workItem from="1667695543525" duration="275000" />
       <workItem from="1667698942336" duration="533000" />
+      <workItem from="1667699681605" duration="120000" />
+      <workItem from="1667945548397" duration="843000" />
+      <workItem from="1667958306894" duration="2251000" />
+      <workItem from="1668020895063" duration="635000" />
     </task>
     <servers />
   </component>
@@ -113,5 +119,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/PuckScript.cs</url>
+          <properties documentPath="C:\Users\duran\Documents\MatchGame\Space Hockey\Assets\Scripts\PuckScript.cs" initialLine="0" isMultiMethodBreakpoint="true">
+            <option name="multiMethodBreakpoint" value="true" />
+            <startOffsets>
+              <option value="-1" />
+            </startOffsets>
+            <endOffsets>
+              <option value="-1" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
