@@ -36,9 +36,7 @@ public class AIScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!PuckScript.WasGoal)
-        {
-            float movementSpeed;
+        float movementSpeed;
 
             if (Puck.position.y < puckBoundary.Down)
             {
@@ -56,6 +54,5 @@ public class AIScript : MonoBehaviour
             }
 
             rb.MovePosition(Vector2.MoveTowards(rb.position, targetPosition, movementSpeed * Time.fixedDeltaTime));
-        }
     }
 }
