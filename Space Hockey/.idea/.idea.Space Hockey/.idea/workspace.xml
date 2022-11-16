@@ -5,13 +5,6 @@
       <change beforePath="$PROJECT_DIR$/../My project (1)/Assets/Characters/LeoForUnity.psb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../My project (1)/Assets/Characters/LeoForUnity.psb.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../My project (1)/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/../My project (1)/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Space Hockey/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Space Hockey/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AIScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AIScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PuckScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PuckScript.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScoreScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScoreScript.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TextMeshProBehaviour1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TextMeshProBehaviour1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +98,8 @@
       <workItem from="1668289587146" duration="214000" />
       <workItem from="1668291319675" duration="1964000" />
       <workItem from="1668301010329" duration="994000" />
-      <workItem from="1668466795226" duration="2231000" />
+      <workItem from="1668466795226" duration="3475000" />
+      <workItem from="1668628076899" duration="309000" />
     </task>
     <servers />
   </component>
