@@ -8,7 +8,7 @@ public class TextMeshProBehaviour1 : MonoBehaviour
 
 {
     private TextMeshProUGUI label;
-    public UnityEvent startEvent;
+    public UnityEvent startEvent, raiseEvent;
     public GameAction gameActionObj;
 
     private void Start()
@@ -40,4 +40,4 @@ public class TextMeshProBehaviour1 : MonoBehaviour
 }
 
 
-//4:45 in video
+

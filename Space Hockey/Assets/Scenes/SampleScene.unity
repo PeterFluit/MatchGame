@@ -1081,6 +1081,10 @@ MonoBehaviour:
   startEvent:
     m_PersistentCalls:
       m_Calls: []
+  raiseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  gameActionObj: {fileID: 0}
 --- !u!1 &1324788392
 GameObject:
   m_ObjectHideFlags: 0
@@ -1621,7 +1625,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -1668,8 +1672,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5404c3109e6aac4f825e0a289c7fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreScriptInstance: {fileID: 0}
-  rb: {fileID: 0}
 --- !u!1 &1890586133
 GameObject:
   m_ObjectHideFlags: 0
@@ -1948,10 +1950,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 660972d223cfa6e4bb9aa684ae2dc9c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AiScoreText: {fileID: 0}
-  PlayerScoreTxt: {fileID: 0}
-  aiScore: 0
-  playerScore: 0
 --- !u!1 &2088196655
 GameObject:
   m_ObjectHideFlags: 0
@@ -2173,27 +2171,63 @@ PrefabInstance:
       value: Score
       objectReference: {fileID: 0}
     - target: {fileID: 8760155231041137577, guid: 90cc52560d6c323468aefddc8eafc779, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760155231041137577, guid: 90cc52560d6c323468aefddc8eafc779, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760155231041137577, guid: 90cc52560d6c323468aefddc8eafc779, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8760155231041137577, guid: 90cc52560d6c323468aefddc8eafc779, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 11400000, guid: 906861430f8f7b044ad06f5325bdf052, type: 2}
+      objectReference: {fileID: 1169427415}
+    - target: {fileID: 8760155231041137577, guid: 90cc52560d6c323468aefddc8eafc779, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 340412e1abd94e54aaea18890dde7155, type: 2}
+    - target: {fileID: 8760155231041137577, guid: 90cc52560d6c323468aefddc8eafc779, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760155231041137577, guid: 90cc52560d6c323468aefddc8eafc779, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8760155231041137577, guid: 90cc52560d6c323468aefddc8eafc779, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UpdateValue
+      value: UpdateText
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760155231041137577, guid: 90cc52560d6c323468aefddc8eafc779, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: RaiseAction
       objectReference: {fileID: 0}
     - target: {fileID: 8760155231041137577, guid: 90cc52560d6c323468aefddc8eafc779, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: IntData, Assembly-CSharp
+      value: TextMeshProBehaviour1, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760155231041137577, guid: 90cc52560d6c323468aefddc8eafc779, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GameAction, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8760155231041137577, guid: 90cc52560d6c323468aefddc8eafc779, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8760155231041137577, guid: 90cc52560d6c323468aefddc8eafc779, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 906861430f8f7b044ad06f5325bdf052, type: 2}
+    - target: {fileID: 8760155231041137577, guid: 90cc52560d6c323468aefddc8eafc779, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: IntData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760155231041137577, guid: 90cc52560d6c323468aefddc8eafc779, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
